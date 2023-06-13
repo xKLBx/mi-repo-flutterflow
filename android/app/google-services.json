@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "618995953699",
+    "project_id": "azakmedv2-40e38",
+    "storage_bucket": "azakmedv2-40e38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618995953699:android:c5e8e4bf12fb8ebb08c196",
+        "android_client_info": {
+          "package_name": "com.mycompany.azakmedv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618995953699-fq80l0mj5ujbecagvahdlh3vtngrvf7k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.azakmedv2",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "618995953699-0tcripalcjo5hc8glkkr7kddkng3c107.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo_l6I3qEBUHXZUNonnHMf2hrb3zTcVME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618995953699-0tcripalcjo5hc8glkkr7kddkng3c107.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "618995953699-te2f5cs7gjk37pgq6a7i54adi8b31rfs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.azakmedv2"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
