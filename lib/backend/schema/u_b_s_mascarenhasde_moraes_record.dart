@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:collection/collection.dart';
+
 import '/backend/schema/util/firestore_util.dart';
 import '/backend/schema/util/schema_util.dart';
 
@@ -77,4 +79,22 @@ Map<String, dynamic> createUBSMascarenhasdeMoraesRecordData({
   );
 
   return firestoreData;
+}
+
+class UBSMascarenhasdeMoraesRecordDocumentEquality
+    implements Equality<UBSMascarenhasdeMoraesRecord> {
+  const UBSMascarenhasdeMoraesRecordDocumentEquality();
+
+  @override
+  bool equals(
+      UBSMascarenhasdeMoraesRecord? e1, UBSMascarenhasdeMoraesRecord? e2) {
+    return e1?.local == e2?.local && e1?.nome == e2?.nome;
+  }
+
+  @override
+  int hash(UBSMascarenhasdeMoraesRecord? e) =>
+      const ListEquality().hash([e?.local, e?.nome]);
+
+  @override
+  bool isValidKey(Object? o) => o is UBSMascarenhasdeMoraesRecord;
 }

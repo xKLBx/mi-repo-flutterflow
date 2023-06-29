@@ -9,19 +9,19 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'login_model.dart';
-export 'login_model.dart';
+import 'login_copy_model.dart';
+export 'login_copy_model.dart';
 
-class LoginWidget extends StatefulWidget {
-  const LoginWidget({Key? key}) : super(key: key);
+class LoginCopyWidget extends StatefulWidget {
+  const LoginCopyWidget({Key? key}) : super(key: key);
 
   @override
-  _LoginWidgetState createState() => _LoginWidgetState();
+  _LoginCopyWidgetState createState() => _LoginCopyWidgetState();
 }
 
-class _LoginWidgetState extends State<LoginWidget>
+class _LoginCopyWidgetState extends State<LoginCopyWidget>
     with TickerProviderStateMixin {
-  late LoginModel _model;
+  late LoginCopyModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -105,24 +105,12 @@ class _LoginWidgetState extends State<LoginWidget>
         ),
       ],
     ),
-    'imageOnPageLoadAnimation': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeIn,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-      ],
-    ),
   };
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => LoginModel());
+    _model = createModel(context, () => LoginCopyModel());
 
     _model.emailAddressController ??= TextEditingController();
     _model.passwordController ??= TextEditingController();
@@ -152,7 +140,7 @@ class _LoginWidgetState extends State<LoginWidget>
               Align(
                 alignment: AlignmentDirectional(0.0, -1.0),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 200.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 150.0, 0.0, 0.0),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -178,7 +166,7 @@ class _LoginWidgetState extends State<LoginWidget>
                             ),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 50.0, 0.0, 0.0),
+                                  0.0, 24.0, 0.0, 0.0),
                               child: DefaultTabController(
                                 length: 2,
                                 initialIndex: 0,
@@ -1247,33 +1235,32 @@ class _LoginWidgetState extends State<LoginWidget>
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(30.0, 60.0, 30.0, 0.0),
+                padding: EdgeInsetsDirectional.fromSTEB(30.0, 30.0, 30.0, 0.0),
                 child: Container(
                   width: double.infinity,
-                  height: 159.0,
+                  height: 100.0,
                   constraints: BoxConstraints(
                     minWidth: double.infinity,
                     maxWidth: double.infinity,
                   ),
                   decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).primaryBtnText,
+                    color: Color(0xFFA000FF),
                     borderRadius: BorderRadius.circular(30.0),
                   ),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(8.0),
-                        child: Image.asset(
-                          'assets/images/AZAKMED_(4).png',
-                          width: 300.0,
-                          height: 215.0,
-                          fit: BoxFit.cover,
-                        ),
-                      ).animateOnPageLoad(
-                          animationsMap['imageOnPageLoadAnimation']!),
+                      Text(
+                        'AzakMed',
+                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Readex Pro',
+                              color:
+                                  FlutterFlowTheme.of(context).primaryBtnText,
+                              fontSize: 50.0,
+                              fontWeight: FontWeight.w600,
+                            ),
+                      ),
                     ],
                   ),
                 ).animateOnPageLoad(

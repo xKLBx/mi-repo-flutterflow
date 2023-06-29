@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:collection/collection.dart';
+
 import '/backend/schema/util/firestore_util.dart';
 import '/backend/schema/util/schema_util.dart';
 
@@ -75,4 +77,20 @@ Map<String, dynamic> createUBSBoraceaRecordData({
   );
 
   return firestoreData;
+}
+
+class UBSBoraceaRecordDocumentEquality implements Equality<UBSBoraceaRecord> {
+  const UBSBoraceaRecordDocumentEquality();
+
+  @override
+  bool equals(UBSBoraceaRecord? e1, UBSBoraceaRecord? e2) {
+    return e1?.local == e2?.local && e1?.nome == e2?.nome;
+  }
+
+  @override
+  int hash(UBSBoraceaRecord? e) =>
+      const ListEquality().hash([e?.local, e?.nome]);
+
+  @override
+  bool isValidKey(Object? o) => o is UBSBoraceaRecord;
 }

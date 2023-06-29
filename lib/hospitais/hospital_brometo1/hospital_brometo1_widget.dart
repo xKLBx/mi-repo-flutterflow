@@ -47,9 +47,9 @@ class _HospitalBrometo1WidgetState extends State<HospitalBrometo1Widget> {
     return Scaffold(
       key: scaffoldKey,
       resizeToAvoidBottomInset: false,
-      backgroundColor: Color(0xFFD7FFC4),
+      backgroundColor: FlutterFlowTheme.of(context).primaryBtnText,
       appBar: AppBar(
-        backgroundColor: Color(0xFF327D26),
+        backgroundColor: Color(0xFFA000FF),
         automaticallyImplyLeading: false,
         leading: FlutterFlowIconButton(
           borderColor: Colors.transparent,
@@ -66,7 +66,7 @@ class _HospitalBrometo1WidgetState extends State<HospitalBrometo1Widget> {
           },
         ),
         title: Text(
-          'ATENOLOL 25MG.',
+          'BROMETO',
           style: FlutterFlowTheme.of(context).bodyLarge.override(
                 fontFamily: 'Readex Pro',
                 color: FlutterFlowTheme.of(context).primaryBtnText,
@@ -158,10 +158,10 @@ class _HospitalBrometo1WidgetState extends State<HospitalBrometo1Widget> {
                                                 child: CachedNetworkImage(
                                                   imageUrl:
                                                       'https://2.bp.blogspot.com/-N2Xvm5zUXSk/UKP6Tg6zvjI/AAAAAAAAAbc/PBG1zpxD82I/s1600/CIMG4100.JPG',
-                                                  width: MediaQuery.of(context)
-                                                          .size
-                                                          .width *
-                                                      1.0,
+                                                  width:
+                                                      MediaQuery.sizeOf(context)
+                                                              .width *
+                                                          1.0,
                                                   height: 230.0,
                                                   fit: BoxFit.cover,
                                                 ),
@@ -189,16 +189,17 @@ class _HospitalBrometo1WidgetState extends State<HospitalBrometo1Widget> {
                                                       20.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Horario de funcionamento: 24 Horas',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Lexend Deca',
-                                                      color: Color(0xFF327D26),
-                                                      fontSize: 16.0,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              'Lexend Deca',
+                                                          color: Colors.black,
+                                                          fontSize: 16.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                        ),
                                               ),
                                             ),
                                             Padding(
@@ -336,10 +337,10 @@ class _HospitalBrometo1WidgetState extends State<HospitalBrometo1Widget> {
                                                 child: CachedNetworkImage(
                                                   imageUrl:
                                                       'https://static.wixstatic.com/media/2dff7a_c8453c10b40d4e7b85c58ece485ecb4c~mv2_d_1600_1200_s_2.jpg/v1/fill/w_560,h_506,al_c,q_90,enc_auto/2dff7a_c8453c10b40d4e7b85c58ece485ecb4c~mv2_d_1600_1200_s_2.jpg',
-                                                  width: MediaQuery.of(context)
-                                                          .size
-                                                          .width *
-                                                      1.0,
+                                                  width:
+                                                      MediaQuery.sizeOf(context)
+                                                              .width *
+                                                          1.0,
                                                   height: 230.0,
                                                   fit: BoxFit.cover,
                                                 ),
@@ -367,16 +368,17 @@ class _HospitalBrometo1WidgetState extends State<HospitalBrometo1Widget> {
                                                       20.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Horario de funcionamento: 07:00 ás 20:00',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Lexend Deca',
-                                                      color: Color(0xFF327D26),
-                                                      fontSize: 16.0,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              'Lexend Deca',
+                                                          color: Colors.black,
+                                                          fontSize: 16.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                        ),
                                               ),
                                             ),
                                             Padding(
@@ -513,10 +515,10 @@ class _HospitalBrometo1WidgetState extends State<HospitalBrometo1Widget> {
                                                 child: CachedNetworkImage(
                                                   imageUrl:
                                                       'https://pr1.nicelocal.br.com/jSVpzeHcAvmue3Bl0T_a_w/1120x700,q85/4px-BW84_n0QJGVPszge3NRBsKw-2VcOifrJIjPYFYkOtaCZxxXQ2d2v7tlwPkNcXD2vu8k4fD_jJ4UKD4mbART3k5spNhqafd3bAOW8qBIXk5gzx9i6DA',
-                                                  width: MediaQuery.of(context)
-                                                          .size
-                                                          .width *
-                                                      1.0,
+                                                  width:
+                                                      MediaQuery.sizeOf(context)
+                                                              .width *
+                                                          1.0,
                                                   height: 230.0,
                                                   fit: BoxFit.cover,
                                                 ),
@@ -544,16 +546,17 @@ class _HospitalBrometo1WidgetState extends State<HospitalBrometo1Widget> {
                                                       20.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Horario de funcionamento: 09:00 ás 22:00',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Lexend Deca',
-                                                      color: Color(0xFF327D26),
-                                                      fontSize: 16.0,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              'Lexend Deca',
+                                                          color: Colors.black,
+                                                          fontSize: 16.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                        ),
                                               ),
                                             ),
                                             Padding(
@@ -657,8 +660,8 @@ class _HospitalBrometo1WidgetState extends State<HospitalBrometo1Widget> {
                             radius: 16.0,
                             dotWidth: 16.0,
                             dotHeight: 8.0,
-                            dotColor: Color(0xFFB2DEA0),
-                            activeDotColor: Color(0xFF113E07),
+                            dotColor: Color(0xFFE6A1FF),
+                            activeDotColor: Color(0xFFA000FF),
                             paintStyle: PaintingStyle.fill,
                           ),
                         ),

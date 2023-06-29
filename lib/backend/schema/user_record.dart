@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:collection/collection.dart';
+
 import '/backend/schema/util/firestore_util.dart';
 import '/backend/schema/util/schema_util.dart';
 
@@ -138,4 +140,39 @@ Map<String, dynamic> createUserRecordData({
   );
 
   return firestoreData;
+}
+
+class UserRecordDocumentEquality implements Equality<UserRecord> {
+  const UserRecordDocumentEquality();
+
+  @override
+  bool equals(UserRecord? e1, UserRecord? e2) {
+    return e1?.email == e2?.email &&
+        e1?.displayName == e2?.displayName &&
+        e1?.photoUrl == e2?.photoUrl &&
+        e1?.uid == e2?.uid &&
+        e1?.createdTime == e2?.createdTime &&
+        e1?.phoneNumber == e2?.phoneNumber &&
+        e1?.endereco == e2?.endereco &&
+        e1?.genero == e2?.genero &&
+        e1?.generodesejado == e2?.generodesejado &&
+        e1?.data == e2?.data;
+  }
+
+  @override
+  int hash(UserRecord? e) => const ListEquality().hash([
+        e?.email,
+        e?.displayName,
+        e?.photoUrl,
+        e?.uid,
+        e?.createdTime,
+        e?.phoneNumber,
+        e?.endereco,
+        e?.genero,
+        e?.generodesejado,
+        e?.data
+      ]);
+
+  @override
+  bool isValidKey(Object? o) => o is UserRecord;
 }

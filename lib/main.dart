@@ -13,7 +13,6 @@ import 'flutter_flow/flutter_flow_util.dart';
 import 'flutter_flow/internationalization.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
 import 'flutter_flow/nav/nav.dart';
 import 'index.dart';
 
@@ -130,38 +129,42 @@ class _NavBarPageState extends State<NavBarPage> {
 
     return Scaffold(
       body: _currentPage ?? tabs[_currentPageName],
-      bottomNavigationBar: GNav(
-        selectedIndex: currentIndex,
-        onTabChange: (i) => setState(() {
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: currentIndex,
+        onTap: (i) => setState(() {
           _currentPage = null;
           _currentPageName = tabs.keys.toList()[i];
         }),
-        backgroundColor: Color(0xFF327D26),
-        color: FlutterFlowTheme.of(context).primaryBtnText,
-        activeColor: Color(0xFFD7FFC4),
-        tabBackgroundColor: Color(0x00000000),
-        tabBorderRadius: 100.0,
-        tabMargin: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-        gap: 0.0,
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        duration: Duration(milliseconds: 500),
-        haptic: false,
-        tabs: [
-          GButton(
-            icon: Icons.home_outlined,
-            text: 'Home',
-            iconSize: 24.0,
+        backgroundColor: FlutterFlowTheme.of(context).primaryBtnText,
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Color(0xFF838383),
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        type: BottomNavigationBarType.fixed,
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home_outlined,
+              size: 24.0,
+            ),
+            label: 'Home',
+            tooltip: '',
           ),
-          GButton(
-            icon: FontAwesomeIcons.pills,
-            text: 'Remédios',
-            iconSize: 20.0,
+          BottomNavigationBarItem(
+            icon: FaIcon(
+              FontAwesomeIcons.pills,
+              size: 20.0,
+            ),
+            label: 'Remédios',
+            tooltip: '',
           ),
-          GButton(
-            icon: Icons.person,
-            text: 'Perfil',
-            iconSize: 24.0,
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.person,
+              size: 24.0,
+            ),
+            label: 'Perfil',
+            tooltip: '',
           )
         ],
       ),

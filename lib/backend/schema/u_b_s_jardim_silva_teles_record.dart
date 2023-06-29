@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:collection/collection.dart';
+
 import '/backend/schema/util/firestore_util.dart';
 import '/backend/schema/util/schema_util.dart';
 
@@ -76,4 +78,21 @@ Map<String, dynamic> createUBSJardimSilvaTelesRecordData({
   );
 
   return firestoreData;
+}
+
+class UBSJardimSilvaTelesRecordDocumentEquality
+    implements Equality<UBSJardimSilvaTelesRecord> {
+  const UBSJardimSilvaTelesRecordDocumentEquality();
+
+  @override
+  bool equals(UBSJardimSilvaTelesRecord? e1, UBSJardimSilvaTelesRecord? e2) {
+    return e1?.local == e2?.local && e1?.nome == e2?.nome;
+  }
+
+  @override
+  int hash(UBSJardimSilvaTelesRecord? e) =>
+      const ListEquality().hash([e?.local, e?.nome]);
+
+  @override
+  bool isValidKey(Object? o) => o is UBSJardimSilvaTelesRecord;
 }

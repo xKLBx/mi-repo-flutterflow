@@ -51,9 +51,9 @@ class _CriandoperfilWidgetState extends State<CriandoperfilWidget> {
       onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFFD7FFC4),
+        backgroundColor: FlutterFlowTheme.of(context).primaryBtnText,
         appBar: AppBar(
-          backgroundColor: Color(0xFF327D26),
+          backgroundColor: Color(0xFFA000FF),
           automaticallyImplyLeading: false,
           title: Text(
             'Perfil',
@@ -120,6 +120,7 @@ class _CriandoperfilWidgetState extends State<CriandoperfilWidget> {
                                   validateFileFormat(m.storagePath, context))) {
                             setState(() => _model.isDataUploading = true);
                             var selectedUploadedFiles = <FFUploadedFile>[];
+
                             var downloadUrls = <String>[];
                             try {
                               selectedUploadedFiles = selectedMedia
@@ -158,10 +159,10 @@ class _CriandoperfilWidgetState extends State<CriandoperfilWidget> {
                             }
                           }
 
-                          final userUpdateData = createUserRecordData(
+                          await currentUserReference!
+                              .update(createUserRecordData(
                             photoUrl: _model.uploadedFileUrl,
-                          );
-                          await currentUserReference!.update(userUpdateData);
+                          ));
                         },
                         text: 'Mudar foto',
                         options: FFButtonOptions(
@@ -170,7 +171,7 @@ class _CriandoperfilWidgetState extends State<CriandoperfilWidget> {
                               24.0, 0.0, 24.0, 0.0),
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: Color(0xFF71BC60),
+                          color: Color(0xFFAD5DF0),
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
                                     fontFamily: 'Readex Pro',
@@ -185,17 +186,6 @@ class _CriandoperfilWidgetState extends State<CriandoperfilWidget> {
                           ),
                           borderRadius: BorderRadius.circular(8.0),
                         ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
-                    child: Container(
-                      width: double.infinity,
-                      height: 4.0,
-                      decoration: BoxDecoration(
-                        color: Color(0xFF327D26),
                       ),
                     ),
                   ),
@@ -215,13 +205,12 @@ class _CriandoperfilWidgetState extends State<CriandoperfilWidget> {
                                 .labelMedium
                                 .override(
                                   fontFamily: 'Readex Pro',
-                                  color: FlutterFlowTheme.of(context)
-                                      .primaryBtnText,
+                                  color: Colors.black,
                                 ),
                             hintStyle: FlutterFlowTheme.of(context).labelMedium,
                             enabledBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
-                                color: Color(0xFF327D26),
+                                color: FlutterFlowTheme.of(context).lineColor,
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
@@ -248,12 +237,13 @@ class _CriandoperfilWidgetState extends State<CriandoperfilWidget> {
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             filled: true,
-                            fillColor: Color(0xFF71BC60),
+                            fillColor:
+                                FlutterFlowTheme.of(context).primaryBtnText,
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Readex Pro',
-                                    color: Color(0xFF113E07),
+                                    color: Colors.black,
                                     fontWeight: FontWeight.w500,
                                   ),
                           textAlign: TextAlign.start,
@@ -279,13 +269,12 @@ class _CriandoperfilWidgetState extends State<CriandoperfilWidget> {
                                 .labelMedium
                                 .override(
                                   fontFamily: 'Readex Pro',
-                                  color: FlutterFlowTheme.of(context)
-                                      .primaryBtnText,
+                                  color: Colors.black,
                                 ),
                             hintStyle: FlutterFlowTheme.of(context).labelMedium,
                             enabledBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
-                                color: Color(0xFF327D26),
+                                color: FlutterFlowTheme.of(context).lineColor,
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
@@ -312,12 +301,13 @@ class _CriandoperfilWidgetState extends State<CriandoperfilWidget> {
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             filled: true,
-                            fillColor: Color(0xFF71BC60),
+                            fillColor:
+                                FlutterFlowTheme.of(context).primaryBtnText,
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Readex Pro',
-                                    color: Color(0xFF113E07),
+                                    color: Colors.black,
                                     fontWeight: FontWeight.w500,
                                   ),
                           textAlign: TextAlign.start,
@@ -343,13 +333,12 @@ class _CriandoperfilWidgetState extends State<CriandoperfilWidget> {
                                 .labelMedium
                                 .override(
                                   fontFamily: 'Readex Pro',
-                                  color: FlutterFlowTheme.of(context)
-                                      .primaryBtnText,
+                                  color: Colors.black,
                                 ),
                             hintStyle: FlutterFlowTheme.of(context).labelMedium,
                             enabledBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
-                                color: Color(0xFF327D26),
+                                color: FlutterFlowTheme.of(context).lineColor,
                                 width: 2.0,
                               ),
                               borderRadius: BorderRadius.circular(8.0),
@@ -376,12 +365,13 @@ class _CriandoperfilWidgetState extends State<CriandoperfilWidget> {
                               borderRadius: BorderRadius.circular(8.0),
                             ),
                             filled: true,
-                            fillColor: Color(0xFF71BC60),
+                            fillColor:
+                                FlutterFlowTheme.of(context).primaryBtnText,
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Readex Pro',
-                                    color: Color(0xFF113E07),
+                                    color: Colors.black,
                                     fontWeight: FontWeight.w500,
                                   ),
                           textAlign: TextAlign.start,
@@ -398,13 +388,12 @@ class _CriandoperfilWidgetState extends State<CriandoperfilWidget> {
                           EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
                       child: FFButtonWidget(
                         onPressed: () async {
-                          final userUpdateData = createUserRecordData(
+                          await currentUserReference!
+                              .update(createUserRecordData(
                             displayName: _model.nomeController.text,
                             endereco: _model.enderecoController.text,
-                            photoUrl: _model.uploadedFileUrl,
                             genero: _model.generoController.text,
-                          );
-                          await currentUserReference!.update(userUpdateData);
+                          ));
 
                           context.pushNamed('HomePage');
                         },
@@ -415,7 +404,7 @@ class _CriandoperfilWidgetState extends State<CriandoperfilWidget> {
                               24.0, 0.0, 24.0, 0.0),
                           iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          color: Color(0xFF71BC60),
+                          color: Color(0xFFAD5DF0),
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
                                     fontFamily: 'Readex Pro',

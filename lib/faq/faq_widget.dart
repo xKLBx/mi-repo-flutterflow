@@ -39,7 +39,7 @@ class _FaqWidgetState extends State<FaqWidget> {
       child: Scaffold(
         key: scaffoldKey,
         appBar: AppBar(
-          backgroundColor: Color(0xFF327D26),
+          backgroundColor: Color(0xFFA000FF),
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderColor: Colors.transparent,
@@ -85,7 +85,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
-                            color: Color(0xFF327D26),
+                            color: Colors.black,
                             fontSize: 20.0,
                             fontWeight: FontWeight.w600,
                           ),
@@ -105,7 +105,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                     fontFamily: 'Readex Pro',
                                     color: Colors.black,
                                     fontSize: 16.0,
-                                    fontWeight: FontWeight.w500,
+                                    fontWeight: FontWeight.w300,
                                   ),
                         ),
                       ),
@@ -128,7 +128,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
-                            color: Color(0xFF327D26),
+                            color: Colors.black,
                             fontSize: 20.0,
                             fontWeight: FontWeight.w600,
                           ),
@@ -148,7 +148,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                     fontFamily: 'Readex Pro',
                                     color: Colors.black,
                                     fontSize: 16.0,
-                                    fontWeight: FontWeight.w500,
+                                    fontWeight: FontWeight.w300,
                                   ),
                         ),
                       ),
@@ -171,7 +171,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
-                            color: Color(0xFF327D26),
+                            color: Colors.black,
                             fontSize: 20.0,
                             fontWeight: FontWeight.w600,
                           ),
@@ -191,7 +191,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                     fontFamily: 'Readex Pro',
                                     color: Colors.black,
                                     fontSize: 16.0,
-                                    fontWeight: FontWeight.w500,
+                                    fontWeight: FontWeight.w300,
                                   ),
                         ),
                       ),
@@ -214,7 +214,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
-                            color: Color(0xFF327D26),
+                            color: Colors.black,
                             fontSize: 20.0,
                             fontWeight: FontWeight.w600,
                           ),
@@ -234,7 +234,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                     fontFamily: 'Readex Pro',
                                     color: Colors.black,
                                     fontSize: 16.0,
-                                    fontWeight: FontWeight.w500,
+                                    fontWeight: FontWeight.w300,
                                   ),
                         ),
                       ),
@@ -257,7 +257,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Readex Pro',
-                            color: Color(0xFF327D26),
+                            color: Colors.black,
                             fontSize: 20.0,
                             fontWeight: FontWeight.w600,
                           ),
@@ -277,7 +277,7 @@ class _FaqWidgetState extends State<FaqWidget> {
                                     fontFamily: 'Readex Pro',
                                     color: Colors.black,
                                     fontSize: 16.0,
-                                    fontWeight: FontWeight.w500,
+                                    fontWeight: FontWeight.w300,
                                   ),
                         ),
                       ),

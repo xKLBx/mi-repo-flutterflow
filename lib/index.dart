@@ -23,3 +23,4 @@ export '/hospitais/hospital_propanol/hospital_propanol_widget.dart'
     show HospitalPropanolWidget;
 export '/hospitais/hospital_sulfatde_sabutol/hospital_sulfatde_sabutol_widget.dart'
     show HospitalSulfatdeSabutolWidget;
+export '/login_copy/login_copy_widget.dart' show LoginCopyWidget;

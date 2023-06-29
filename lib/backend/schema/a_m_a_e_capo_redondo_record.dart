@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:collection/collection.dart';
+
 import '/backend/schema/util/firestore_util.dart';
 import '/backend/schema/util/schema_util.dart';
 
@@ -75,4 +77,21 @@ Map<String, dynamic> createAMAECapoRedondoRecordData({
   );
 
   return firestoreData;
+}
+
+class AMAECapoRedondoRecordDocumentEquality
+    implements Equality<AMAECapoRedondoRecord> {
+  const AMAECapoRedondoRecordDocumentEquality();
+
+  @override
+  bool equals(AMAECapoRedondoRecord? e1, AMAECapoRedondoRecord? e2) {
+    return e1?.local == e2?.local && e1?.nome == e2?.nome;
+  }
+
+  @override
+  int hash(AMAECapoRedondoRecord? e) =>
+      const ListEquality().hash([e?.local, e?.nome]);
+
+  @override
+  bool isValidKey(Object? o) => o is AMAECapoRedondoRecord;
 }

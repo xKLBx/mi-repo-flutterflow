@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:collection/collection.dart';
+
 import '/backend/schema/util/firestore_util.dart';
 import '/backend/schema/util/schema_util.dart';
 
@@ -76,4 +78,21 @@ Map<String, dynamic> createHospitalCampolimpoRecordData({
   );
 
   return firestoreData;
+}
+
+class HospitalCampolimpoRecordDocumentEquality
+    implements Equality<HospitalCampolimpoRecord> {
+  const HospitalCampolimpoRecordDocumentEquality();
+
+  @override
+  bool equals(HospitalCampolimpoRecord? e1, HospitalCampolimpoRecord? e2) {
+    return e1?.local == e2?.local && e1?.nome == e2?.nome;
+  }
+
+  @override
+  int hash(HospitalCampolimpoRecord? e) =>
+      const ListEquality().hash([e?.local, e?.nome]);
+
+  @override
+  bool isValidKey(Object? o) => o is HospitalCampolimpoRecord;
 }

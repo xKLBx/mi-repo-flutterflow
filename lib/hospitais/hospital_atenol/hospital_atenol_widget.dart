@@ -47,9 +47,9 @@ class _HospitalAtenolWidgetState extends State<HospitalAtenolWidget> {
     return Scaffold(
       key: scaffoldKey,
       resizeToAvoidBottomInset: false,
-      backgroundColor: Color(0xFFD7FFC4),
+      backgroundColor: FlutterFlowTheme.of(context).primaryBtnText,
       appBar: AppBar(
-        backgroundColor: Color(0xFF327D26),
+        backgroundColor: Color(0xFFA000FF),
         automaticallyImplyLeading: false,
         leading: FlutterFlowIconButton(
           borderColor: Colors.transparent,
@@ -66,7 +66,7 @@ class _HospitalAtenolWidgetState extends State<HospitalAtenolWidget> {
           },
         ),
         title: Text(
-          'ATENOLOL 25MG.',
+          'ATENOLOL',
           style: FlutterFlowTheme.of(context).bodyLarge.override(
                 fontFamily: 'Readex Pro',
                 color: FlutterFlowTheme.of(context).primaryBtnText,
@@ -157,10 +157,10 @@ class _HospitalAtenolWidgetState extends State<HospitalAtenolWidget> {
                                                     BorderRadius.circular(10.0),
                                                 child: Image.asset(
                                                   'assets/images/campo_limpo.jpg',
-                                                  width: MediaQuery.of(context)
-                                                          .size
-                                                          .width *
-                                                      1.0,
+                                                  width:
+                                                      MediaQuery.sizeOf(context)
+                                                              .width *
+                                                          1.0,
                                                   height: 230.0,
                                                   fit: BoxFit.cover,
                                                 ),
@@ -188,16 +188,17 @@ class _HospitalAtenolWidgetState extends State<HospitalAtenolWidget> {
                                                       20.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Horario de funcionamento: 24 Horas',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Lexend Deca',
-                                                      color: Color(0xFF327D26),
-                                                      fontSize: 16.0,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              'Lexend Deca',
+                                                          color: Colors.black,
+                                                          fontSize: 16.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                        ),
                                               ),
                                             ),
                                             Padding(
@@ -334,10 +335,10 @@ class _HospitalAtenolWidgetState extends State<HospitalAtenolWidget> {
                                                     BorderRadius.circular(10.0),
                                                 child: Image.asset(
                                                   'assets/images/AMAECAPAO.png',
-                                                  width: MediaQuery.of(context)
-                                                          .size
-                                                          .width *
-                                                      1.0,
+                                                  width:
+                                                      MediaQuery.sizeOf(context)
+                                                              .width *
+                                                          1.0,
                                                   height: 230.0,
                                                   fit: BoxFit.cover,
                                                 ),
@@ -365,16 +366,17 @@ class _HospitalAtenolWidgetState extends State<HospitalAtenolWidget> {
                                                       20.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Horario de funcionamento: 07:00 ás 20:00',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Lexend Deca',
-                                                      color: Color(0xFF327D26),
-                                                      fontSize: 16.0,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              'Lexend Deca',
+                                                          color: Colors.black,
+                                                          fontSize: 16.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                        ),
                                               ),
                                             ),
                                             Padding(
@@ -511,10 +513,10 @@ class _HospitalAtenolWidgetState extends State<HospitalAtenolWidget> {
                                                     BorderRadius.circular(10.0),
                                                 child: Image.asset(
                                                   'assets/images/editada_3.jpg',
-                                                  width: MediaQuery.of(context)
-                                                          .size
-                                                          .width *
-                                                      1.0,
+                                                  width:
+                                                      MediaQuery.sizeOf(context)
+                                                              .width *
+                                                          1.0,
                                                   height: 230.0,
                                                   fit: BoxFit.cover,
                                                 ),
@@ -542,16 +544,17 @@ class _HospitalAtenolWidgetState extends State<HospitalAtenolWidget> {
                                                       20.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Horario de funcionamento: 09:00 ás 22:00',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Lexend Deca',
-                                                      color: Color(0xFF327D26),
-                                                      fontSize: 16.0,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              'Lexend Deca',
+                                                          color: Colors.black,
+                                                          fontSize: 16.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                        ),
                                               ),
                                             ),
                                             Padding(
@@ -655,8 +658,8 @@ class _HospitalAtenolWidgetState extends State<HospitalAtenolWidget> {
                             radius: 16.0,
                             dotWidth: 16.0,
                             dotHeight: 8.0,
-                            dotColor: Color(0xFFB2DEA0),
-                            activeDotColor: Color(0xFF113E07),
+                            dotColor: Color(0xFFEBBBFF),
+                            activeDotColor: Color(0xFFA000FF),
                             paintStyle: PaintingStyle.fill,
                           ),
                         ),

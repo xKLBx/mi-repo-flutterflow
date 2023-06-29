@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:collection/collection.dart';
+
 import '/backend/schema/util/firestore_util.dart';
 import '/backend/schema/util/schema_util.dart';
 
@@ -76,4 +78,21 @@ Map<String, dynamic> createUBSUniaodeVilaNovaRecordData({
   );
 
   return firestoreData;
+}
+
+class UBSUniaodeVilaNovaRecordDocumentEquality
+    implements Equality<UBSUniaodeVilaNovaRecord> {
+  const UBSUniaodeVilaNovaRecordDocumentEquality();
+
+  @override
+  bool equals(UBSUniaodeVilaNovaRecord? e1, UBSUniaodeVilaNovaRecord? e2) {
+    return e1?.local == e2?.local && e1?.nome == e2?.nome;
+  }
+
+  @override
+  int hash(UBSUniaodeVilaNovaRecord? e) =>
+      const ListEquality().hash([e?.local, e?.nome]);
+
+  @override
+  bool isValidKey(Object? o) => o is UBSUniaodeVilaNovaRecord;
 }

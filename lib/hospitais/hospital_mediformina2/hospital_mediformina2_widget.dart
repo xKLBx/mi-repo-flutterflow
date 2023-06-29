@@ -49,9 +49,9 @@ class _HospitalMediformina2WidgetState
     return Scaffold(
       key: scaffoldKey,
       resizeToAvoidBottomInset: false,
-      backgroundColor: Color(0xFFD7FFC4),
+      backgroundColor: FlutterFlowTheme.of(context).primaryBtnText,
       appBar: AppBar(
-        backgroundColor: Color(0xFF327D26),
+        backgroundColor: Color(0xFFA000FF),
         automaticallyImplyLeading: false,
         leading: FlutterFlowIconButton(
           borderColor: Colors.transparent,
@@ -68,7 +68,7 @@ class _HospitalMediformina2WidgetState
           },
         ),
         title: Text(
-          'ATENOLOL 25MG.',
+          'METIFORMINA 850MG',
           style: FlutterFlowTheme.of(context).bodyLarge.override(
                 fontFamily: 'Readex Pro',
                 color: FlutterFlowTheme.of(context).primaryBtnText,
@@ -160,10 +160,10 @@ class _HospitalMediformina2WidgetState
                                                 child: CachedNetworkImage(
                                                   imageUrl:
                                                       'https://imagens.globoradio.globo.com/cbn/fotos/uploads2015/89634/fullsizerender-(23)jpg_295x165.jpg',
-                                                  width: MediaQuery.of(context)
-                                                          .size
-                                                          .width *
-                                                      1.0,
+                                                  width:
+                                                      MediaQuery.sizeOf(context)
+                                                              .width *
+                                                          1.0,
                                                   height: 230.0,
                                                   fit: BoxFit.cover,
                                                 ),
@@ -191,16 +191,17 @@ class _HospitalMediformina2WidgetState
                                                       20.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Horario de funcionamento: 24 Horas',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Lexend Deca',
-                                                      color: Color(0xFF327D26),
-                                                      fontSize: 16.0,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              'Lexend Deca',
+                                                          color: Colors.black,
+                                                          fontSize: 16.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                        ),
                                               ),
                                             ),
                                             Padding(
@@ -338,10 +339,10 @@ class _HospitalMediformina2WidgetState
                                                 child: CachedNetworkImage(
                                                   imageUrl:
                                                       'https://admin.sindsep-sp.org.br/sistema/fotos/918/galeria/4_max.jpg',
-                                                  width: MediaQuery.of(context)
-                                                          .size
-                                                          .width *
-                                                      1.0,
+                                                  width:
+                                                      MediaQuery.sizeOf(context)
+                                                              .width *
+                                                          1.0,
                                                   height: 230.0,
                                                   fit: BoxFit.cover,
                                                 ),
@@ -369,16 +370,17 @@ class _HospitalMediformina2WidgetState
                                                       20.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Horario de funcionamento: 07:00 ás 20:00',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Lexend Deca',
-                                                      color: Color(0xFF327D26),
-                                                      fontSize: 16.0,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              'Lexend Deca',
+                                                          color: Colors.black,
+                                                          fontSize: 16.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                        ),
                                               ),
                                             ),
                                             Padding(
@@ -516,10 +518,10 @@ class _HospitalMediformina2WidgetState
                                                 child: CachedNetworkImage(
                                                   imageUrl:
                                                       'https://lh3.googleusercontent.com/p/AF1QipOXBes5uDjZSBEpLYwVgaXmUgQffLTkc08e4gVr=s680-w680-h510',
-                                                  width: MediaQuery.of(context)
-                                                          .size
-                                                          .width *
-                                                      1.0,
+                                                  width:
+                                                      MediaQuery.sizeOf(context)
+                                                              .width *
+                                                          1.0,
                                                   height: 230.0,
                                                   fit: BoxFit.cover,
                                                 ),
@@ -547,16 +549,17 @@ class _HospitalMediformina2WidgetState
                                                       20.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Horario de funcionamento: 09:00 ás 22:00',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Lexend Deca',
-                                                      color: Color(0xFF327D26),
-                                                      fontSize: 16.0,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              'Lexend Deca',
+                                                          color: Colors.black,
+                                                          fontSize: 16.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                        ),
                                               ),
                                             ),
                                             Padding(
@@ -660,8 +663,8 @@ class _HospitalMediformina2WidgetState
                             radius: 16.0,
                             dotWidth: 16.0,
                             dotHeight: 8.0,
-                            dotColor: Color(0xFFB2DEA0),
-                            activeDotColor: Color(0xFF113E07),
+                            dotColor: Color(0xFFEBBBFF),
+                            activeDotColor: Color(0xFFA000FF),
                             paintStyle: PaintingStyle.fill,
                           ),
                         ),

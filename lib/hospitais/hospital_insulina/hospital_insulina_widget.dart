@@ -47,9 +47,9 @@ class _HospitalInsulinaWidgetState extends State<HospitalInsulinaWidget> {
     return Scaffold(
       key: scaffoldKey,
       resizeToAvoidBottomInset: false,
-      backgroundColor: Color(0xFFD7FFC4),
+      backgroundColor: FlutterFlowTheme.of(context).primaryBtnText,
       appBar: AppBar(
-        backgroundColor: Color(0xFF327D26),
+        backgroundColor: Color(0xFFA000FF),
         automaticallyImplyLeading: false,
         leading: FlutterFlowIconButton(
           borderColor: Colors.transparent,
@@ -66,7 +66,7 @@ class _HospitalInsulinaWidgetState extends State<HospitalInsulinaWidget> {
           },
         ),
         title: Text(
-          'ATENOLOL 25MG.',
+          'INSULINA',
           style: FlutterFlowTheme.of(context).bodyLarge.override(
                 fontFamily: 'Readex Pro',
                 color: FlutterFlowTheme.of(context).primaryBtnText,
@@ -158,10 +158,10 @@ class _HospitalInsulinaWidgetState extends State<HospitalInsulinaWidget> {
                                                 child: CachedNetworkImage(
                                                   imageUrl:
                                                       'https://cloudfront-us-east-1.images.arcpublishing.com/estadao/7UGZBIYI3FNCHKJOVWGFK4MBKY.jpg',
-                                                  width: MediaQuery.of(context)
-                                                          .size
-                                                          .width *
-                                                      1.0,
+                                                  width:
+                                                      MediaQuery.sizeOf(context)
+                                                              .width *
+                                                          1.0,
                                                   height: 230.0,
                                                   fit: BoxFit.cover,
                                                 ),
@@ -189,16 +189,17 @@ class _HospitalInsulinaWidgetState extends State<HospitalInsulinaWidget> {
                                                       20.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Horario de funcionamento: 24 Horas',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Lexend Deca',
-                                                      color: Color(0xFF327D26),
-                                                      fontSize: 16.0,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              'Lexend Deca',
+                                                          color: Colors.black,
+                                                          fontSize: 16.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                        ),
                                               ),
                                             ),
                                             Padding(
@@ -336,10 +337,10 @@ class _HospitalInsulinaWidgetState extends State<HospitalInsulinaWidget> {
                                                 child: CachedNetworkImage(
                                                   imageUrl:
                                                       'https://aps.santamarcelina.org/wp-content/uploads/2019/10/Renomecao_UBS_COPA_MATHILDE_AQUINO_DINIZ-222.jpg',
-                                                  width: MediaQuery.of(context)
-                                                          .size
-                                                          .width *
-                                                      1.0,
+                                                  width:
+                                                      MediaQuery.sizeOf(context)
+                                                              .width *
+                                                          1.0,
                                                   height: 230.0,
                                                   fit: BoxFit.cover,
                                                 ),
@@ -367,16 +368,17 @@ class _HospitalInsulinaWidgetState extends State<HospitalInsulinaWidget> {
                                                       20.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Horario de funcionamento: 07:00 ás 20:00',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Lexend Deca',
-                                                      color: Color(0xFF327D26),
-                                                      fontSize: 16.0,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              'Lexend Deca',
+                                                          color: Colors.black,
+                                                          fontSize: 16.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                        ),
                                               ),
                                             ),
                                             Padding(
@@ -514,10 +516,10 @@ class _HospitalInsulinaWidgetState extends State<HospitalInsulinaWidget> {
                                                 child: CachedNetworkImage(
                                                   imageUrl:
                                                       'https://pr1.nicelocal.br.com/ICRBYv1UM1KpT9pVGH8Psg/330x440,q85/4px-BW84_n0QJGVPszge3NRBsKw-2VcOifrJIjPYFYkOtaCZxxXQ2WoRpVLTYtabRS7LLGLbgmhs2adp4NVQfvF_oS8bZ9ogjoBN0CZEl_Zb5jOfT5kBiQ',
-                                                  width: MediaQuery.of(context)
-                                                          .size
-                                                          .width *
-                                                      1.0,
+                                                  width:
+                                                      MediaQuery.sizeOf(context)
+                                                              .width *
+                                                          1.0,
                                                   height: 230.0,
                                                   fit: BoxFit.cover,
                                                 ),
@@ -545,16 +547,17 @@ class _HospitalInsulinaWidgetState extends State<HospitalInsulinaWidget> {
                                                       20.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Horario de funcionamento: 09:00 ás 22:00',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Lexend Deca',
-                                                      color: Color(0xFF327D26),
-                                                      fontSize: 16.0,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              'Lexend Deca',
+                                                          color: Colors.black,
+                                                          fontSize: 16.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                        ),
                                               ),
                                             ),
                                             Padding(
@@ -658,8 +661,8 @@ class _HospitalInsulinaWidgetState extends State<HospitalInsulinaWidget> {
                             radius: 16.0,
                             dotWidth: 16.0,
                             dotHeight: 8.0,
-                            dotColor: Color(0xFFB2DEA0),
-                            activeDotColor: Color(0xFF113E07),
+                            dotColor: Color(0xFFEBBBFF),
+                            activeDotColor: Color(0xFFA000FF),
                             paintStyle: PaintingStyle.fill,
                           ),
                         ),

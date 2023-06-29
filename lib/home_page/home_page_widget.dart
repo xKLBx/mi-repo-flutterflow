@@ -39,6 +39,23 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),
       child: Scaffold(
         key: scaffoldKey,
+        backgroundColor: FlutterFlowTheme.of(context).primaryBtnText,
+        appBar: AppBar(
+          backgroundColor: Color(0xFFA000FF),
+          automaticallyImplyLeading: false,
+          title: Text(
+            'Página inicial',
+            style: FlutterFlowTheme.of(context).headlineMedium.override(
+                  fontFamily: 'Outfit',
+                  color: Colors.white,
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.w500,
+                ),
+          ),
+          actions: [],
+          centerTitle: true,
+          elevation: 2.0,
+        ),
         body: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
@@ -46,7 +63,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               width: double.infinity,
               height: 942.0,
               decoration: BoxDecoration(
-                color: Color(0xFFD7FFC4),
+                color: FlutterFlowTheme.of(context).primaryBtnText,
               ),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
@@ -59,35 +76,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
-                            child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  25.0, 25.0, 25.0, 25.0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  AuthUserStreamWidget(
-                                    builder: (context) => Text(
-                                      currentUserDisplayName,
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Readex Pro',
-                                            fontSize: 25.0,
-                                            fontWeight: FontWeight.w600,
-                                          ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
                           Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 30.0),
+                                0.0, 30.0, 0.0, 20.0),
                             child: AuthUserStreamWidget(
                               builder: (context) => ClipRRect(
                                 borderRadius: BorderRadius.circular(40.0),
@@ -100,14 +91,30 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               ),
                             ),
                           ),
+                          AuthUserStreamWidget(
+                            builder: (context) => Text(
+                              currentUserDisplayName,
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .override(
+                                    fontFamily: 'Readex Pro',
+                                    color: Colors.black,
+                                  ),
+                            ),
+                          ),
                           Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              Container(
-                                width: double.infinity,
-                                height: 4.0,
-                                decoration: BoxDecoration(
-                                  color: Color(0xFF327D26),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 10.0, 0.0, 0.0),
+                                child: Container(
+                                  width: double.infinity,
+                                  height: 4.0,
+                                  decoration: BoxDecoration(
+                                    color:
+                                        FlutterFlowTheme.of(context).lineColor,
+                                  ),
                                 ),
                               ),
                             ],
@@ -147,7 +154,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               width: 350.0,
                               height: 40.0,
                               decoration: BoxDecoration(
-                                color: Color(0xFF327D26),
+                                color:
+                                    FlutterFlowTheme.of(context).primaryBtnText,
                                 boxShadow: [
                                   BoxShadow(
                                     blurRadius: 4.0,
@@ -157,6 +165,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 ],
                                 borderRadius: BorderRadius.circular(10.0),
                                 shape: BoxShape.rectangle,
+                                border: Border.all(
+                                  color: FlutterFlowTheme.of(context).lineColor,
+                                ),
                               ),
                               child: InkWell(
                                 splashColor: Colors.transparent,
@@ -184,7 +195,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     Flexible(
                                       child: FaIcon(
                                         FontAwesomeIcons.pills,
-                                        color: Color(0xFF71BC60),
+                                        color: Colors.black,
                                       ),
                                     ),
                                     Row(
@@ -200,9 +211,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Readex Pro',
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryBtnText,
+                                                  color: Colors.black,
                                                 ),
                                           ),
                                         ),
@@ -227,7 +236,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               width: 350.0,
                               height: 40.0,
                               decoration: BoxDecoration(
-                                color: Color(0xFF327D26),
+                                color:
+                                    FlutterFlowTheme.of(context).primaryBtnText,
                                 boxShadow: [
                                   BoxShadow(
                                     blurRadius: 4.0,
@@ -237,6 +247,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 ],
                                 borderRadius: BorderRadius.circular(10.0),
                                 shape: BoxShape.rectangle,
+                                border: Border.all(
+                                  color: FlutterFlowTheme.of(context).lineColor,
+                                ),
                               ),
                               child: InkWell(
                                 splashColor: Colors.transparent,
@@ -264,7 +277,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     Flexible(
                                       child: FaIcon(
                                         FontAwesomeIcons.questionCircle,
-                                        color: Color(0xFF71BC60),
+                                        color: Colors.black,
                                       ),
                                     ),
                                     Row(
@@ -280,9 +293,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Readex Pro',
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryBtnText,
+                                                  color: Colors.black,
                                                 ),
                                           ),
                                         ),
@@ -307,7 +318,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               width: 350.0,
                               height: 40.0,
                               decoration: BoxDecoration(
-                                color: Color(0xFF327D26),
+                                color:
+                                    FlutterFlowTheme.of(context).primaryBtnText,
                                 boxShadow: [
                                   BoxShadow(
                                     blurRadius: 4.0,
@@ -317,6 +329,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 ],
                                 borderRadius: BorderRadius.circular(10.0),
                                 shape: BoxShape.rectangle,
+                                border: Border.all(
+                                  color: FlutterFlowTheme.of(context).lineColor,
+                                ),
                               ),
                               child: InkWell(
                                 splashColor: Colors.transparent,
@@ -338,7 +353,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     Flexible(
                                       child: Icon(
                                         Icons.exit_to_app,
-                                        color: Color(0xFF71BC60),
+                                        color: Colors.black,
                                       ),
                                     ),
                                     Row(
@@ -354,9 +369,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Readex Pro',
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryBtnText,
+                                                  color: Colors.black,
                                                 ),
                                           ),
                                         ),

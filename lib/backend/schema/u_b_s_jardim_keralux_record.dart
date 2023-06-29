@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:collection/collection.dart';
+
 import '/backend/schema/util/firestore_util.dart';
 import '/backend/schema/util/schema_util.dart';
 
@@ -76,4 +78,21 @@ Map<String, dynamic> createUBSJardimKeraluxRecordData({
   );
 
   return firestoreData;
+}
+
+class UBSJardimKeraluxRecordDocumentEquality
+    implements Equality<UBSJardimKeraluxRecord> {
+  const UBSJardimKeraluxRecordDocumentEquality();
+
+  @override
+  bool equals(UBSJardimKeraluxRecord? e1, UBSJardimKeraluxRecord? e2) {
+    return e1?.local == e2?.local && e1?.nome == e2?.nome;
+  }
+
+  @override
+  int hash(UBSJardimKeraluxRecord? e) =>
+      const ListEquality().hash([e?.local, e?.nome]);
+
+  @override
+  bool isValidKey(Object? o) => o is UBSJardimKeraluxRecord;
 }

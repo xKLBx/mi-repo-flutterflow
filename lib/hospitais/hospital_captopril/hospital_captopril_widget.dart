@@ -48,9 +48,9 @@ class _HospitalCaptoprilWidgetState extends State<HospitalCaptoprilWidget> {
     return Scaffold(
       key: scaffoldKey,
       resizeToAvoidBottomInset: false,
-      backgroundColor: Color(0xFFD7FFC4),
+      backgroundColor: FlutterFlowTheme.of(context).primaryBtnText,
       appBar: AppBar(
-        backgroundColor: Color(0xFF327D26),
+        backgroundColor: Color(0xFFA000FF),
         automaticallyImplyLeading: false,
         leading: FlutterFlowIconButton(
           borderColor: Colors.transparent,
@@ -67,7 +67,7 @@ class _HospitalCaptoprilWidgetState extends State<HospitalCaptoprilWidget> {
           },
         ),
         title: Text(
-          'ATENOLOL 25MG.',
+          'CAPTOPRIL',
           style: FlutterFlowTheme.of(context).bodyLarge.override(
                 fontFamily: 'Readex Pro',
                 color: FlutterFlowTheme.of(context).primaryBtnText,
@@ -159,10 +159,10 @@ class _HospitalCaptoprilWidgetState extends State<HospitalCaptoprilWidget> {
                                                 child: CachedNetworkImage(
                                                   imageUrl:
                                                       'https://yt3.googleusercontent.com/ytc/AGIKgqO9A9_nBSiXsuZwhDyh3mnpjVnRR6sNRRrsflHa=s900-c-k-c0x00ffffff-no-rj',
-                                                  width: MediaQuery.of(context)
-                                                          .size
-                                                          .width *
-                                                      1.0,
+                                                  width:
+                                                      MediaQuery.sizeOf(context)
+                                                              .width *
+                                                          1.0,
                                                   height: 230.0,
                                                   fit: BoxFit.cover,
                                                 ),
@@ -190,16 +190,17 @@ class _HospitalCaptoprilWidgetState extends State<HospitalCaptoprilWidget> {
                                                       20.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Horario de funcionamento: 24 Horas',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Lexend Deca',
-                                                      color: Color(0xFF327D26),
-                                                      fontSize: 16.0,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              'Lexend Deca',
+                                                          color: Colors.black,
+                                                          fontSize: 16.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                        ),
                                               ),
                                             ),
                                             Padding(
@@ -337,10 +338,10 @@ class _HospitalCaptoprilWidgetState extends State<HospitalCaptoprilWidget> {
                                                 child: CachedNetworkImage(
                                                   imageUrl:
                                                       'https://www.prefeitura.sp.gov.br/cidade/secretarias/upload/chamadas/ubsjardimhelian_1509470339.jpg',
-                                                  width: MediaQuery.of(context)
-                                                          .size
-                                                          .width *
-                                                      1.0,
+                                                  width:
+                                                      MediaQuery.sizeOf(context)
+                                                              .width *
+                                                          1.0,
                                                   height: 230.0,
                                                   fit: BoxFit.cover,
                                                 ),
@@ -368,16 +369,17 @@ class _HospitalCaptoprilWidgetState extends State<HospitalCaptoprilWidget> {
                                                       20.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Horario de funcionamento: 07:00 ás 20:00',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Lexend Deca',
-                                                      color: Color(0xFF327D26),
-                                                      fontSize: 16.0,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              'Lexend Deca',
+                                                          color: Colors.black,
+                                                          fontSize: 16.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                        ),
                                               ),
                                             ),
                                             Padding(
@@ -515,10 +517,10 @@ class _HospitalCaptoprilWidgetState extends State<HospitalCaptoprilWidget> {
                                                 child: CachedNetworkImage(
                                                   imageUrl:
                                                       'https://pr0.nicelocal.br.com/2HZbXzhz4XNzByuFhpDcbw/1120x700,q85/4px-BW84_n0QJGVPszge3NRBsKw-2VcOifrJIjPYFYkOtaCZxxXQ2d1tB9hdOaMtYcZDJ5LbbZ7b5b0tv6axUe3pOqLfgukBja-4Z9XH-2Oax5-552jLhg',
-                                                  width: MediaQuery.of(context)
-                                                          .size
-                                                          .width *
-                                                      1.0,
+                                                  width:
+                                                      MediaQuery.sizeOf(context)
+                                                              .width *
+                                                          1.0,
                                                   height: 230.0,
                                                   fit: BoxFit.cover,
                                                 ),
@@ -546,16 +548,17 @@ class _HospitalCaptoprilWidgetState extends State<HospitalCaptoprilWidget> {
                                                       20.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 'Horario de funcionamento: 09:00 ás 22:00',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Lexend Deca',
-                                                      color: Color(0xFF327D26),
-                                                      fontSize: 16.0,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily:
+                                                              'Lexend Deca',
+                                                          color: Colors.black,
+                                                          fontSize: 16.0,
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                        ),
                                               ),
                                             ),
                                             Padding(
@@ -659,8 +662,8 @@ class _HospitalCaptoprilWidgetState extends State<HospitalCaptoprilWidget> {
                             radius: 16.0,
                             dotWidth: 16.0,
                             dotHeight: 8.0,
-                            dotColor: Color(0xFFB2DEA0),
-                            activeDotColor: Color(0xFF113E07),
+                            dotColor: Color(0xFFEBBBFF),
+                            activeDotColor: Color(0xFFA000FF),
                             paintStyle: PaintingStyle.fill,
                           ),
                         ),
